@@ -5,6 +5,15 @@ client.on('ready', message =>
 {
   client.user.setPresence({ game: { name: '' } });  
   console.log('Hallo Warld!!');
+}
+{
+
+    const ch_name = "noa-global-chat";
+
+    client.channels.forEach(channel => {
+        if (channel.name === ch_name) {
+            channel.send("再起動しました！")
+            return;
 });
 
 client.on('message', message =>
@@ -12,6 +21,11 @@ client.on('message', message =>
     if (message.channel.name === 'noa-global-chat')
     {
         if (message.author.bot) return;
+        if (message.content.match(/discord.gg/)) 
+        {
+            message.delete(100)
+            return;
+        }
         if (message.attachments.size <= 0)
         {
             message.delete()
