@@ -3,15 +3,15 @@ const client = new Discord.Client();
 
 client.on('ready', message =>
 {
-  client.user.setPresence({ game: { name: '' } });  
-  console.log('Hallo Warld!!');
-}
-{
+    client.user.setPresence({ game: { name: 'グローバルチャット' } });  
+    console.log('Hallo Warld!!');
 
     const ch_name = "noa-global-chat";
 
-    client.channels.forEach(channel => {
-        if (channel.name === ch_name) {
+    client.channels.forEach(channel =>
+    {
+        if (channel.name === ch_name) 
+        {
             channel.send("起動しました")
             return;
         }
