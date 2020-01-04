@@ -12,9 +12,12 @@ client.on('ready', message =>
 
     client.channels.forEach(channel => {
         if (channel.name === ch_name) {
-            channel.send("再起動しました！")
+            channel.send("起動しました")
             return;
-});
+        }
+        return;
+    });
+})
 
 client.on('message', message =>
 {
