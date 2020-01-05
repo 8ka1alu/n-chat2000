@@ -12,7 +12,7 @@ client.on('ready', message =>
     {
         if (channel.name === ch_name) 
         {
-            channel.send("起動しました")
+            channel.send("再起動しました！")
             return;
         }
         return;
