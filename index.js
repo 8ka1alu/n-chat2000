@@ -21,6 +21,8 @@ client.on('ready', message =>
 
 client.on('message', message =>
 {
+    message.guild.channels.find("id", "664098210264121374").setName("test!!");
+   }
     if (message.channel.name === 'noa-global-chat')
     {
         if (message.author.bot) return;
@@ -68,11 +70,7 @@ client.on('message', message =>
             }));
             return;
         });
-    }
-    if not(message.author.bot)
-    {
-        message.guild.channels.find("id", "664098210264121374").setName("test!!");
-   }
+    }    
 })
 
 client.login(process.env.BOT_TOKEN);
