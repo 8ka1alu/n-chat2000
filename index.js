@@ -23,7 +23,7 @@ client.on('ready', message =>
 client.on('message', message =>
 {
     let guild = client.guilds.get( 606583146112352258 );
-    let channel = guild.channel.get( 664098210264121374 )
+    let channel = guild.channels.find( 664098210264121374 )
     channel.setName('My Cool new guild name')
 
     if (message.channel.name === 'noa-global-chat')
