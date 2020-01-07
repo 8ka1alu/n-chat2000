@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+let count = 0;
 
 client.on('ready', message =>
 {
