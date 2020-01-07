@@ -22,7 +22,7 @@ client.on('ready', message =>
 client.on('message', message =>
 {
     message.guild.channels.find("id", "664098210264121374").setName("test!!");
-   }
+
     if (message.channel.name === 'noa-global-chat')
     {
         if (message.author.bot) return;
