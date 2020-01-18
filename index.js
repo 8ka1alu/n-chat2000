@@ -31,11 +31,6 @@ client.on('message', message =>
             message.delete(100)
             return;
         }
-        if (message.content.match(/スロット/)) 
-        {
-            message.delete(100)
-            return;
-        }
         if (message.attachments.size <= 0)
         {
             message.delete()
